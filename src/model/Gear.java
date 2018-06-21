@@ -14,6 +14,8 @@ public class Gear {
 
     public void setSize(int size) {
         if (size > 0 && size < 10)
+
+            return;
         this.size = size;
     }
 

@@ -12,13 +12,14 @@ public class Ciclist {
      */
     public String name;
     public int rpm;
-    public int pushPower;
-    Bike bike = new Bike();
+    public int push;
+
 
     public void pedal(){
 
     }
     public void breaking() {
+        System.out.println(name + " tormoz migirad...");
 
     }
 

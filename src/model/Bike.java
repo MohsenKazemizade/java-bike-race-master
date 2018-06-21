@@ -1,6 +1,6 @@
 package model;
 
-public class Bike extends Ciclist {
+public class Bike {
     /**
      * name
      * gear
@@ -14,17 +14,20 @@ public class Bike extends Ciclist {
 
 
     public String name;
-    Gear g = new Gear();
-    Break b = new Break();
-    private int speed;
+    public Gear gear;
+    public Break  abreak;
 
-    public int getSpeed() {
-        return speed;
+
+    public int speed;
+
+    public void pedal(int rpm){
+        speed = gear.getSize() * rpm;
     }
+    public void breaking(int push){
+        speed -= abreak.getPower() * push;
+        if (speed < 0 ){
+            speed = 0;
+        }
 
-    public void setSpeed(int speed) {
-        if (speed > 0 && speed <= 10)
-            System.out.println(g.getSize() * rpm);
-        this.speed = speed;
     }
 }
