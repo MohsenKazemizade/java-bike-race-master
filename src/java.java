@@ -1,7 +1,4 @@
-import model.Bike;
-import model.Break;
-import model.Ciclist;
-import model.Gear;
+import model.*;
 
 public class Java {
 
@@ -14,6 +11,7 @@ public class Java {
 
         Bike bike = new Bike();
         bike.name = "shimanobike";
+        //bike.gear.model = "shimanoGear";
 
 
         Gear g = new Gear();
@@ -25,9 +23,7 @@ public class Java {
         b.model = "shimanoBreak";
 
 
-
-
-        
+        Map map = new Map();
 
 
 
