@@ -25,9 +25,9 @@ public class Bike {
     }
     public void breaking(int push){
         speed -= abreak.getPower() * push;
-        if (speed < 0 ){
+        if (speed < 0 )
             speed = 0;
-        }
+
 
     }
 }

@@ -20,6 +20,7 @@ public class Map {
         R4 = new Round();
         R4.maxSpeed = 10;
 
+        System.out.println("hello constructor");
 
 
     }
